@@ -1,16 +1,28 @@
 {% extends "base.html" %} 
-
+{%load static %}
 {% block title %}List{% endblock title %}
 
 {% block content %}
+<!--<div>
+	<img src="http://rhinobooksnashville.com/wp-content/uploads/2019/06/1_CsDgB2D8KIetB_e37t3n_A.jpeg" class="this">
+</div> -->
 <br>
+
+
 <div class="row">
   {% for destination in destinations %}
-  <a href="{% url 'destination-detail' destination.id %}">
-    <img src="{{destination.pretty_picture.url}}" />
-    <p>{{destination.name}}</p>
-    <p>{{destination.activities}}</p>
-  </a>
+  <div class="col-12 col-md-6 col-lg-4">
+<div class="card" style="width: 18rem;">
+  <img  src="{{ destination.pretty_picture.url}}" >
+  <div class="card-body">
+    <b><i class="card-text">{{destination.name}}</i></b>
+    <p class="card-text">optimal visiting season: {{destination.optimal_visiting_season}}</p>
+     <a href="{% url 'destination-detail' destination.id %}" class="card-link btn btn-outline-info">Read more</a>
+  </div>
+</div>
+</div>
+
   {% endfor %}
 </div>
 {% endblock content %}
+

@@ -1,0 +1,44 @@
+img {
+	width:100%;
+	height:200px;
+}
+#ch{
+	width:100%;
+	height:450px;
+}
+.this{
+width: 100%
+}
+body{
+	background-color: #F6F8FE;
+	background-image: url("travel5.jpg");
+	   background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+.imgh{
+	  background-image: url("https://www.stardestinations.com/images/headers/travel-destinations.jpg");
+	  min-height: 250px;
+
+  /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+  /* Needed to position the navbar */
+      position: relative;
+	}
+.header{
+  position: absolute;
+  margin: 10px;
+  width: auto;
+}
+.card{
+	margin-bottom: 20px;
+}
+
+.jumbotron{
+	background-image: url("world2.jpg");
+}
+
+
